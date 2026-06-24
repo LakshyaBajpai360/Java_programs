@@ -1,0 +1,16 @@
+import java.util.Scanner;
+//Sum of digits
+public class Pr35 {
+    public static void main(String[] args) {
+        int n,sum=0,rem;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number :");
+        n= sc.nextInt();
+        while(n>0){
+            rem=n%10;
+            sum=sum+rem;
+            n=n/10;
+        }
+        System.out.println("Sum of digits is :"+sum);
+    }
+}
